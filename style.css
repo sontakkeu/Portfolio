@@ -320,13 +320,11 @@ nav ul li a:hover::after{
 
 #Achievement img {
     border: 3px solid #fff;   /* white border */
-    border-radius: 10px;      /* optional rounded corners */
-    width: fit-content;             /* set same width */
-    height: fit-content;            /* set same height */
-    object-fit: cover;        /* makes image fit nicely */
+    border-radius: 10px;      /* rounded corners */
+    width: 800px;             /* fixed width */
+    height:fit-content;            /* fixed height */
     margin: 10px;             /* spacing between images */
 }
-
 
 /* Contact Section */
 #Contact {
