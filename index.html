@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <!-- it is connection for css file -->
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div id="header" style="padding-top: 50px; padding-bottom: 20px;">
         <div class="container">
@@ -20,6 +18,7 @@
                     <li><a href="#" onclick="opentab('Skills')">Skills</a></li>
                     <li><a href="#" onclick="opentab('Intern')">Intern</a></li>
                     <li><a href="#" onclick="opentab('Project')">Project</a></li>
+                    <li><a href="#" onclick="opentab('Achievement')">Achievement</a></li>
                     <li><a href="#" onclick="opentab('Contact')">Contact</a></li>
                 </ul>
             </nav>
@@ -44,7 +43,6 @@
         <br>
         <br>
         <!-- about seaction start -->
-
         <div id="About">
             <div class="container">
                 <div class="row">
@@ -71,13 +69,15 @@
                             Dedicated to delivering high-quality, robust software solutions and continuously enhancing
                             technical skills.
                         </p>
-
+                    </div>
                         <!-- Tab navigation -->
+                         
                         <div class="tab-title">
                             <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
                             <p class="tab-links" onclick="opentab('Skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('Intern')">Intern</p>
                             <p class="tab-links" onclick="opentab('Project')">Project</p>
+                            <p class="tab-links" onclick="opentab('Achievement')">Achievement</p>
                             <p class="tab-links" onclick="opentab('Contact')">Contact</p>
                         </div>
 
@@ -120,7 +120,6 @@
                                 </ul>
                             </div>
                         </div>
-
                         <!-- Intern seaction -->
                         <div class="tab-contents" id="Intern">
                             <h2 class="section-title">Java Full Stack Developer Intern</h2>
@@ -142,7 +141,6 @@
                                     <li><span>Project:</span> Employee Management System</li>
                                 </ul>
                             </div>
-
                             <div class="intern-details">
                                 <h3>Key Skills & Technologies</h3>
                                 <ul>
@@ -157,7 +155,6 @@
                                     </li>
                                 </ul>
                             </div>
-
                             <div class="intern-details">
                                 <h3>Frameworks & Development Tools</h3>
                                 <ul>
@@ -218,21 +215,21 @@
                                 <p class="project-description">
                                     Developed a fully functional E-commerce platform with a component-based architecture
                                     and role-based access, providing a seamless shopping experience.
-                                    The project leverages **Angular Routing** for smooth page navigation without
-                                    reloading, and **Bootstrap** for responsive design to ensure the platform works
+                                    The project leverages Angular Routing for smooth page navigation without
+                                    reloading, and Bootstrap for responsive design to ensure the platform works
                                     efficiently on all devices.
-                                    It integrates **Angular 19**, **Spring Boot**, **Bootstrap**, and **MySQL** for a
+                                    It integrates Angular 19, Spring Boot, Bootstrap, and MySQL for a
                                     secure, scalable, and user-friendly E-commerce platform.
                                 </p>
                                 <div class="project-details">
                                     <h3>Project Overview</h3>
                                     <ul>
                                         <li><span>Objective:</span> Build a scalable E-commerce platform with smooth
-                                            navigation using **Angular Routing**, responsive UI with **Bootstrap**, and
+                                            navigation using Angular Routing, responsive UI with Bootstrap, and
                                             role-based access control.</li>
-                                        <li><span>Technologies Used:</span> Frontend: **Angular 19**, **Bootstrap**,
-                                            Backend: **Spring Boot**, Database: **MySQL**, Development Environment:
-                                            **Eclipse IDE**.</li>
+                                        <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
+                                            Backend: Spring Boot, Database: MySQL, Development Environment:
+                                            Eclipse IDE.</li>
                                         <li><span>Features:</span> Product catalog, user authentication, shopping cart,
                                             secure checkout, and admin panel with role-based access.</li>
                                     </ul>
@@ -252,15 +249,12 @@
                                     <img src="list.jpg" class="img-fluid" alt="ToDo App Login">
                                     <hr class="image-line">
                                 </div>
-
-
                                 <br><br>
-
                                 <p class="project-description">
-                                    Developed a **ToDo App** that helps users manage their daily tasks and to-do lists
+                                    Developed a ToDo App that helps users manage their daily tasks and to-do lists
                                     in a simple, easy-to-use interface.
-                                    The app integrates **Angular 19** for frontend development, **Bootstrap** for
-                                    responsive design, and a backend powered by **Node.js** and **Express** to handle
+                                    The app integrates Angular 19 for frontend development, Bootstrap for
+                                    responsive design, and a backend powered by Spring Boot and Express to handle
                                     task management functionalities.
                                     It features task creation, editing, and deletion functionalities with real-time data
                                     updates. 
@@ -272,13 +266,21 @@
                                         <li><span>Objective:</span> Build a simple ToDo app to manage daily tasks with
                                             functionalities like adding, editing, and deleting tasks, as well as
                                             filtering and sorting them.</li>
-                                        <li><span>Technologies Used:</span> Frontend: **Angular 19**, **Bootstrap**,
-                                            Backend: **Node.js**, **Express**, Database: **MongoDB**.</li>
+                                        <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
+                                            Backend: Spring Boot, Database: MYSQL.</li>
                                         <li><span>Features:</span> Task management (add/edit/delete), task filtering,
                                             real-time updates, and responsive UI.</li>
                                     </ul>
                                 </div>
                             </div>
+                        </div>
+
+                        <div id="Achievement" class="tab-contents">
+                                <h2>CERTIFICATE </h2>
+                                <br>
+                        <img src="certificate software.jpg" alt="SOFTWARE ">
+                        <br>
+                        <img src="certificate.jpg" alt="SOFTWARE ">
                         </div>
                         <!-- Contact Section -->
                         <div id="Contact" class="tab-contents">
@@ -297,8 +299,7 @@
             </div>
         </div>
     </div>
-    </div>
-
+    
     <script>
         function opentab(tabname) {
             var tablinks = document.getElementsByClassName("tab-links");
@@ -328,8 +329,6 @@
                 event.currentTarget.classList.add("active-link");
             }
         }
-
-
     </script>
     <!-- JavaScript to Toggle Between Projects -->
     <script>
@@ -349,8 +348,5 @@
             }
         });
     </script>
-
-
 </body>
-
 </html>

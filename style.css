@@ -113,10 +113,10 @@ nav ul li a:hover::after{
     
     .row {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+ 
     .about-col-1 img {
         width: 100%;
         max-width: 350px;
@@ -158,19 +158,36 @@ nav ul li a:hover::after{
     }
 
     /* skills  container */
-.tab-title{
-    display: flex;
-    margin: 20px 0 40px;
-}
-/* tab links */
- .tab-links{
-margin-right: 50px;
-font-size: 18px;
-font-weight: 500;
-cursor: pointer;
-position: relative;
 
+
+.tab-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 40px;  /* auto centers the container */
+    text-align: center;
+    
 }
+
+/* tab links */
+.tab-links {
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 25px;   /* makes it rounded */
+    transition: all 0.3s ease;
+}
+.tab-links:hover {
+    font-weight: bold;
+    background-color: rgba(255, 0, 79, 0.2); /* light red shade */
+    border-radius: 25px;
+    box-shadow: 0 3px 8px rgba(255, 0, 79, 0.4);
+}
+
 .tab-links::after{
     content: '';
     width: 0;
@@ -185,7 +202,13 @@ position: relative;
 .tab-links.active-links::after,.tab-links:hover::after {
     width: 100%;
 }
-
+.tab-links.active-links {
+    background-color: #ff004f;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px #0ca35d99;
+}
 /* General list styling (applies to both sections) */
 .tab-contents ul {
     list-style-type: none;  /* Removes bullets */
@@ -295,6 +318,15 @@ position: relative;
     font-weight: bold;
 }
 
+#Achievement img {
+    border: 3px solid #fff;   /* white border */
+    border-radius: 10px;      /* optional rounded corners */
+    width: fit-content;             /* set same width */
+    height: fit-content;            /* set same height */
+    object-fit: cover;        /* makes image fit nicely */
+    margin: 10px;             /* spacing between images */
+}
+
 
 /* Contact Section */
 #Contact {
@@ -329,7 +361,10 @@ position: relative;
 /* Tabs Structure */
 .tab-title {
     display: flex;
-    margin: 20px 0 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto 40px;
+    text-align: center;
 }
 .tab-links {
     margin-right: 50px;
@@ -337,7 +372,18 @@ position: relative;
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: #fff;              /* white text */
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
 }
+.tab-links:hover {
+    font-weight: bold;
+    background-color: rgba(255, 0, 79, 0.2); /* light red */
+    color: #ff004f;
+    box-shadow: 0 3px 8px rgba(255, 0, 79, 0.4);
+}
+
 .tab-links::after {
     content: '';
     width: 0;
@@ -364,7 +410,10 @@ position: relative;
 /* Highlight Active Tab */
 .tab-links.active-links {
     font-weight: bold;
-    color: #ff004f;
+    background-color: #ff004f;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 12px rgba(255, 0, 79, 0.6);
 }
 .tab-links:hover::after,
 .tab-links.active-links::after {
@@ -376,8 +425,12 @@ position: relative;
 /* Active Link Style for Project Tab */
 .tab-links.active-links {
     font-weight: bold;
-    color: #ff004f;
+    color: #fff;                /* text white */
+    padding: 8px 16px;          /* spacing inside */
+    border-radius: 6px;         /* rounded box look */
+    transition: all 0.3s ease;
 }
+
 /* Animation for fading in sections */
 .tab-contents {
     opacity: 0;
@@ -396,22 +449,15 @@ nav ul li a:hover {
 }
 
 
-
-/* project image */
-
-
-/* The image container (each div) */
-
 /* Style for the images */
 .image-container img {
     width: 100%;      /* Make the images responsive (fill the container) */
     height: auto;     /* Maintain aspect ratio */
-    max-width: 200px; /* Set a max width for the images */
+    max-width: auto; /* Set a max width for the images */
     display: block;
     margin: 0 auto;   /* Center the images horizontally */
     box-sizing: border-box;
 }
-
 
 .form-control {
     width: 250px;
