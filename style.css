@@ -371,3 +371,80 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Laptops and medium screens */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 10px 5%; /* reduce side padding */
+    }
+
+    .header-text h1 {
+        font-size: 50px;
+    }
+
+    .header-text p {
+        font-size: 24px;
+    }
+
+    .about-col-2 {
+        padding-left: 20px;
+    }
+
+    #Achievement img {
+        width: 80%; /* smaller images */
+    }
+
+    nav {
+        padding: 8px 15px;
+    }
+
+    nav ul li button {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+}
+
+/* Tablets and mobile screens */
+@media screen and (max-width: 768px) {
+    .row {
+        flex-direction: column; /* stack columns */
+        align-items: center;
+    }
+
+    .about-col-1 img {
+        max-width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .header-text p {
+        font-size: 20px;
+    }
+
+    #Achievement img {
+        width: 90%; /* smaller images on mobile */
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        top: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0; /* remove rounded corners for small screen */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+}
