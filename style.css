@@ -405,6 +405,21 @@ html {
 
 /* Tablets and mobile screens */
 @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
+        .header-text {
+            margin-top: 10%;  /* less space from top */
+            font-size: 16px;  /* optional base font size for paragraphs */
+        }
+    
+        .header-text h1 {
+            font-size: 32px; /* smaller heading */
+        }
+    
+        .header-text p {
+            font-size: 18px; /* smaller paragraph */
+        }
+    }
+    
     .row {
         flex-direction: column; /* stack columns */
         align-items: center;
