@@ -19,11 +19,6 @@
     background-position: center;   
 }
 
-@media screen and (max-width: 768px) {
-    #header {
-        height: 60vh; /* mobile */
-    }
-}
 .container{
     padding: 10px 10%;
 }
@@ -374,99 +369,5 @@ nav {
 
 html {
     scroll-behavior: smooth;
-}
-
-/* Laptops and medium screens */
-@media screen and (max-width: 1024px) {
-    .container {
-        padding: 10px 5%; /* reduce side padding */
-    }
-
-    .header-text h1 {
-        font-size: 50px;
-    }
-
-    .header-text p {
-        font-size: 24px;
-    }
-
-    .about-col-2 {
-        padding-left: 20px;
-    }
-
-    #Achievement img {
-        width: 80%; /* smaller images */
-    }
-
-    nav {
-        padding: 8px 15px;
-    }
-
-    nav ul li button {
-        font-size: 14px;
-        padding: 4px 6px;
-    }
-}
-
-/* Tablets and mobile screens */
-@media screen and (max-width: 768px) {
-
-    /* Header text adjustments */
-    .header-text {
-        margin-top: 10%;  /* less space from top */
-        font-size: 16px;  /* base font size for paragraph */
-    }
-
-    .header-text h1 {
-        font-size: 32px; /* smaller heading */
-    }
-
-    .header-text p {
-        font-size: 18px; /* smaller paragraph */
-    }
-
-    /* About section */
-    .row {
-        flex-direction: column; /* stack columns */
-        align-items: center;
-    }
-
-    .about-col-1 img {
-        max-width: 250px;
-        margin-bottom: 20px;
-    }
-
-    .about-col-2 {
-        padding-left: 0;
-        text-align: center;
-    }
-
-    /* Achievements images */
-    #Achievement img {
-        width: 90%; /* smaller images on mobile */
-    }
-
-    /* Navigation adjustments */
-    nav {
-        top: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0; /* remove rounded corners */
-        padding: 8px 10px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    nav ul li button {
-        font-size: 14px;
-        padding: 4px 6px;
-    }
-
-    nav ul li {
-        margin: 5px 0;
-    }
 }
 
