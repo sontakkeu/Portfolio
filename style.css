@@ -19,6 +19,11 @@
     background-position: center;   
 }
 
+@media screen and (max-width: 768px) {
+    #header {
+        height: 60vh; /* mobile */
+    }
+}
 .container{
     padding: 10px 10%;
 }
@@ -405,21 +410,22 @@ html {
 
 /* Tablets and mobile screens */
 @media screen and (max-width: 768px) {
-    @media screen and (max-width: 768px) {
-        .header-text {
-            margin-top: 10%;  /* less space from top */
-            font-size: 16px;  /* optional base font size for paragraphs */
-        }
-    
-        .header-text h1 {
-            font-size: 32px; /* smaller heading */
-        }
-    
-        .header-text p {
-            font-size: 18px; /* smaller paragraph */
-        }
+
+    /* Header text adjustments */
+    .header-text {
+        margin-top: 10%;  /* less space from top */
+        font-size: 16px;  /* base font size for paragraph */
     }
-    
+
+    .header-text h1 {
+        font-size: 32px; /* smaller heading */
+    }
+
+    .header-text p {
+        font-size: 18px; /* smaller paragraph */
+    }
+
+    /* About section */
     .row {
         flex-direction: column; /* stack columns */
         align-items: center;
@@ -435,16 +441,18 @@ html {
         text-align: center;
     }
 
-    .header-text h1 {
-        font-size: 40px;
-    }
-
-    .header-text p {
-        font-size: 20px;
-    }
-
+    /* Achievements images */
     #Achievement img {
         width: 90%; /* smaller images on mobile */
+    }
+
+    /* Navigation adjustments */
+    nav {
+        top: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0; /* remove rounded corners */
+        padding: 8px 10px;
     }
 
     nav ul {
@@ -452,14 +460,13 @@ html {
         align-items: flex-start;
     }
 
-    nav {
-        top: 0;
-        right: 0;
-        width: 100%;
-        border-radius: 0; /* remove rounded corners for small screen */
+    nav ul li button {
+        font-size: 14px;
+        padding: 4px 6px;
     }
 
     nav ul li {
         margin: 5px 0;
     }
 }
+
