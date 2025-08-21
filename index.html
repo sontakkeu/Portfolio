@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,23 @@
     <!-- it is connection for css file -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="header" style="padding-top: 50px; padding-bottom: 20px;">
+    <div id="Home" style="padding-top: 50px; padding-bottom: 20px;">
         <div class="container">
             <nav>
                 <ul>
-                    <li><a href="#" onclick="opentab('Home')">Home</a></li>
-                    <li><a href="#" onclick="opentab('About')">About</a></li>
-                    <li><a href="#" onclick="opentab('Education')">Education</a></li>
-                    <li><a href="#" onclick="opentab('Skills')">Skills</a></li>
-                    <li><a href="#" onclick="opentab('Intern')">Intern</a></li>
-                    <li><a href="#" onclick="opentab('Project')">Project</a></li>
-                    <li><a href="#" onclick="opentab('Achievement')">Achievement</a></li>
-                    <li><a href="#" onclick="opentab('Contact')">Contact</a></li>
+                    <li><button onclick="opentab('Home')">Home</button></li>
+                    <li><button onclick="opentab('About')">About</button></li>
+                    <li><button onclick="opentab('Education')">Education</button></li>
+                    <li><button onclick="opentab('Skills')">Skills</button></li>
+                    <li><button onclick="opentab('Intern')">Intern</button></li>
+                    <li><button onclick="opentab('Project')">Project</button></li>
+                    <li><button onclick="opentab('Achievement')">Achievement</button></li>
+                    <li><button onclick="opentab('Contact')">Contact</button></li>
                 </ul>
             </nav>
+
             <div class="header-text">
                 <h1>Hello, I'm <span>SONTAKKE UDDHAV</span> </h1>
                 <p>Java FullStack Developer</p>
@@ -55,8 +58,9 @@
                             Aspiring IT Professional with Expertise in <span class="highlight">Java</span> and Web
                             Technologies.
                             Proficient in Java development with a strong focus on the <span class="highlight">Spring
-                            Boot , Spring MVC,  Spring  Security</span> and
-                            web technologies like <span class="highlight">HTML, CSS, and Angular 19, JavaScript , React </span>.
+                                Boot , Spring MVC, Spring Security</span> and
+                            web technologies like <span class="highlight">HTML, CSS, and Angular 19, JavaScript , React
+                            </span>.
                         </p>
                         <p>
                             Skilled in <span class="highlight">database management</span> using MySQL, effective
@@ -70,241 +74,232 @@
                             technical skills.
                         </p>
                     </div>
-                        <!-- Tab navigation -->
-                         
-                        <div class="tab-title">
-                            <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
-                            <p class="tab-links" onclick="opentab('Skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('Intern')">Intern</p>
-                            <p class="tab-links" onclick="opentab('Project')">Project</p>
-                            <p class="tab-links" onclick="opentab('Achievement')">Achievement</p>
-                            <p class="tab-links" onclick="opentab('Contact')">Contact</p>
+                </div>
+
+
+
+                <!-- Education -->
+                <div class="tab-contents active-tab" id="Education">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-details">
+                        <h3>Academic Qualifications</h3>
+                        <ul>
+                            <li><span>B.Tech. [MECH]</span><br>Dbatu University, Lonere
+                                Raigad.<br>2021-2024<br>CGPA: 6.73<br>Final Year Percentage: 71.05%</li>
+                            <li><span>Diploma [MECH]</span><br>MSBTE Mumbai.<br>2019-2021<br>Percentage: 80.10%
+                            </li>
+                            <li><span>SSC [MSBSHSE]</span><br>2016-2017<br>Percentage: 61.40%</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Skills -->
+                <div class="tab-contents" id="Skills">
+                    <h2 class="section-title">Technical Skills</h2>
+                    <p class="skills-description">
+                        A comprehensive set of technical skills acquired through experience and hands-on
+                        projects.
+                    </p>
+                    <div class="skills-details">
+                        <ul>
+                            <li>CORE JAVA</li>
+                            <li>OPP's Java</li>
+                            <li>Spring Boot</li>
+                            <li>Spring MVC</li>
+                            <li>Spring Security</li>
+                            <li>Microservice</li>
+                            <li>Spring JSP</li>
+                            <li>Angular</li>
+                            <li>React</li>
+                            <li>JavaScript</li>
+                            <li>HTML - CSS</li>
+                            <li>MYSQL</li>
+                            <li>PLC</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Intern seaction -->
+                <div class="tab-contents" id="Intern">
+                    <h2 class="section-title">Java Full Stack Developer Intern</h2>
+                    <p class="intern-description">
+                        Completed an internship as a Java Full Stack Developer Intern at HefShine Software Pvt.
+                        Ltd., Pune, Maharashtra.
+                        Worked on the Learning Management System (LMS) project, gaining hands-on experience in
+                        both backend and frontend development.
+                    </p>
+
+                    <div class="intern-details">
+                        <h3>Internship Overview</h3>
+                        <ul>
+                            <li><span>Company:</span> HefShine Software Pvt. Ltd., Pune, Maharashtra</li>
+                            <li><span>Duration:</span> July 2024 - July 2025</li>
+                            <li><span>Project:</span> Learning Management System (LMS)</li>
+                            <li><span>Project:</span> eCommerce site.</li>
+                            <li><span>Project:</span> Todo App.</li>
+                            <li><span>Project:</span> Employee Management System</li>
+                        </ul>
+                    </div>
+                    <div class="intern-details">
+                        <h3>Key Skills & Technologies</h3>
+                        <ul>
+                            <li><span>Java:</span> Strong understanding of Object-Oriented Programming (OOPs)
+                                concepts, including Inheritance, Polymorphism, Encapsulation, and Abstraction.
+                            </li>
+                            <li><span>Data Structures & Algorithms:</span> Proficient in implementing efficient
+                                algorithms.</li>
+                            <li><span>Exception Handling:</span> Experienced in handling exceptions and
+                                implementing custom exceptions.</li>
+                            <li><span>Collection Framework:</span> Well-versed in List, Set, and Map interfaces.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="intern-details">
+                        <h3>Frameworks & Development Tools</h3>
+                        <ul>
+                            <li><span>Spring Framework:</span> Hands-on experience with dependency injection
+                                using constructor-based and setter-based injection (IoC).</li>
+                            <li><span>Spring Boot:</span> Strong knowledge of Spring Boot for developing and
+                                deploying scalable web applications.</li>
+                            <li><span>REST APIs:</span> Developed RESTful APIs using Spring Boot to perform CRUD
+                                operations (Create, Read, Update, Delete) on databases.</li>
+                            <li><span>Web Technologies:</span> Skilled in HTML, CSS, JavaScript, TypeScript, and
+                                Angular.</li>
+                            <li><span>Database:</span> Experience working with MySQL (Relational Database
+                                Management System).</li>
+                            <li><span>Development Tools:</span> Proficient in using Eclipse IDE.</li>
+                            <li><span>Web Server:</span> Experience with Apache Tomcat.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Project Seaction -->
+
+                <div class="tab-contents" id="Project">
+                    <h2 class="section-title">Select Project</h2>
+
+                    <!-- Dropdown to select the project -->
+                    <select id="projectSelector" class="form-control">
+                        <option value="ecommerce">E-commerce Project</option>
+                        <option value="todo">ToDo App Project</option>
+                    </select>
+
+                    <!-- E-commerce Project -->
+                    <div class="project-details" id="ecommerceProject">
+                        <h2 class="section-title">E-commerce Project</h2>
+                        <div class="image-container">
+                            <img src="home.jpg" class="img-fluid" alt="E-commerce Banner">
+                            <hr class="image-line">
                         </div>
 
-                        <!-- Education -->
-                        <div class="tab-contents active-tab" id="Education">
-                            <h2 class="section-title">Education</h2>
-                            <div class="education-details">
-                                <h3>Academic Qualifications</h3>
-                                <ul>
-                                    <li><span>B.Tech. [MECH]</span><br>Dbatu University, Lonere
-                                        Raigad.<br>2021-2024<br>CGPA: 6.73<br>Final Year Percentage: 71.05%</li>
-                                    <li><span>Diploma [MECH]</span><br>MSBTE Mumbai.<br>2019-2021<br>Percentage: 80.10%
-                                    </li>
-                                    <li><span>SSC [MSBSHSE]</span><br>2016-2017<br>Percentage: 61.40%</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Skills -->
-                        <div class="tab-contents" id="Skills">
-                            <h2 class="section-title">Technical Skills</h2>
-                            <p class="skills-description">
-                                A comprehensive set of technical skills acquired through experience and hands-on
-                                projects.
-                            </p>
-                            <div class="skills-details">
-                                <ul>
-                                    <li>CORE JAVA</li>
-                                    <li>OPP's Java</li>
-                                    <li>Spring Boot</li>
-                                    <li>Spring MVC</li>
-                                    <li>Spring Security</li>
-                                    <li>Microservice</li>
-                                    <li>Spring JSP</li>
-                                    <li>Angular</li>
-                                    <li>React</li>
-                                    <li>JavaScript</li>
-                                    <li>HTML - CSS</li>
-                                    <li>MYSQL</li>
-                                    <li>PLC</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Intern seaction -->
-                        <div class="tab-contents" id="Intern">
-                            <h2 class="section-title">Java Full Stack Developer Intern</h2>
-                            <p class="intern-description">
-                                Completed an internship as a Java Full Stack Developer Intern at HefShine Software Pvt.
-                                Ltd., Pune, Maharashtra.
-                                Worked on the Learning Management System (LMS) project, gaining hands-on experience in
-                                both backend and frontend development.
-                            </p>
-
-                            <div class="intern-details">
-                                <h3>Internship Overview</h3>
-                                <ul>
-                                    <li><span>Company:</span> HefShine Software Pvt. Ltd., Pune, Maharashtra</li>
-                                    <li><span>Duration:</span> July 2024 - July 2025</li>
-                                    <li><span>Project:</span> Learning Management System (LMS)</li>
-                                    <li><span>Project:</span> eCommerce site.</li>
-                                    <li><span>Project:</span> Todo App.</li>
-                                    <li><span>Project:</span> Employee Management System</li>
-                                </ul>
-                            </div>
-                            <div class="intern-details">
-                                <h3>Key Skills & Technologies</h3>
-                                <ul>
-                                    <li><span>Java:</span> Strong understanding of Object-Oriented Programming (OOPs)
-                                        concepts, including Inheritance, Polymorphism, Encapsulation, and Abstraction.
-                                    </li>
-                                    <li><span>Data Structures & Algorithms:</span> Proficient in implementing efficient
-                                        algorithms.</li>
-                                    <li><span>Exception Handling:</span> Experienced in handling exceptions and
-                                        implementing custom exceptions.</li>
-                                    <li><span>Collection Framework:</span> Well-versed in List, Set, and Map interfaces.
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="intern-details">
-                                <h3>Frameworks & Development Tools</h3>
-                                <ul>
-                                    <li><span>Spring Framework:</span> Hands-on experience with dependency injection
-                                        using constructor-based and setter-based injection (IoC).</li>
-                                    <li><span>Spring Boot:</span> Strong knowledge of Spring Boot for developing and
-                                        deploying scalable web applications.</li>
-                                    <li><span>REST APIs:</span> Developed RESTful APIs using Spring Boot to perform CRUD
-                                        operations (Create, Read, Update, Delete) on databases.</li>
-                                    <li><span>Web Technologies:</span> Skilled in HTML, CSS, JavaScript, TypeScript, and
-                                        Angular.</li>
-                                    <li><span>Database:</span> Experience working with MySQL (Relational Database
-                                        Management System).</li>
-                                    <li><span>Development Tools:</span> Proficient in using Eclipse IDE.</li>
-                                    <li><span>Web Server:</span> Experience with Apache Tomcat.</li>
-                                </ul>
-                            </div>
+                        <!-- Image for Login -->
+                        <div class="image-container">
+                            <img src="Login.jpg" class="img-fluid" alt="Login Page">
+                            <hr class="image-line">
                         </div>
 
-                        <!-- Project Seaction -->
-
-                        <div class="tab-contents" id="Project">
-                            <h2 class="section-title">Select Project</h2>
-
-                            <!-- Dropdown to select the project -->
-                            <select id="projectSelector" class="form-control">
-                                <option value="ecommerce">E-commerce Project</option>
-                                <option value="todo">ToDo App Project</option>
-                            </select>
-
-                            <!-- E-commerce Project -->
-                            <div class="project-details" id="ecommerceProject">
-                                <h2 class="section-title">E-commerce Project</h2>
-                                <div class="image-container">
-                                    <img src="home.jpg" class="img-fluid" alt="E-commerce Banner">
-                                    <hr class="image-line">
-                                </div>
-
-                                <!-- Image for Login -->
-                                <div class="image-container">
-                                    <img src="Login.jpg" class="img-fluid" alt="Login Page">
-                                    <hr class="image-line">
-                                </div>
-
-                                <!-- Image for Admin -->
-                                <div class="image-container">
-                                    <img src="admin.jpg" class="img-fluid" alt="Admin Dashboard">
-                                    <hr class="image-line">
-                                </div>
-
-                                <!-- Image for User -->
-                                <div class="image-container">
-                                    <img src="user.jpg" class="img-fluid" alt="User Dashboard">
-                                    <hr class="image-line">
-                                </div>
-                                <br><br>
-
-                                <p class="project-description">
-                                    Developed a fully functional E-commerce platform with a component-based architecture
-                                    and role-based access, providing a seamless shopping experience.
-                                    The project leverages Angular Routing for smooth page navigation without
-                                    reloading, and Bootstrap for responsive design to ensure the platform works
-                                    efficiently on all devices.
-                                    It integrates Angular 19, Spring Boot, Bootstrap, and MySQL for a
-                                    secure, scalable, and user-friendly E-commerce platform.
-                                </p>
-                                <div class="project-details">
-                                    <h3>Project Overview</h3>
-                                    <ul>
-                                        <li><span>Objective:</span> Build a scalable E-commerce platform with smooth
-                                            navigation using Angular Routing, responsive UI with Bootstrap, and
-                                            role-based access control.</li>
-                                        <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
-                                            Backend: Spring Boot, Database: MySQL, Development Environment:
-                                            Eclipse IDE.</li>
-                                        <li><span>Features:</span> Product catalog, user authentication, shopping cart,
-                                            secure checkout, and admin panel with role-based access.</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- ToDo App Project -->
-                            <div class="project-details" id="todoProject" style="display: none;">
-                                <h2 class="section-title">ToDo App Project</h2>
-                                <div class="image-container">
-                                    <img src="todo.jpg" class="img-fluid" alt="ToDo App Home">
-                                    <hr class="image-line">
-                                </div>
-
-                                <!-- Image for ToDo App Interface -->
-                                <div class="image-container">
-                                    <img src="list.jpg" class="img-fluid" alt="ToDo App Login">
-                                    <hr class="image-line">
-                                </div>
-                                <br><br>
-                                <p class="project-description">
-                                    Developed a ToDo App that helps users manage their daily tasks and to-do lists
-                                    in a simple, easy-to-use interface.
-                                    The app integrates Angular 19 for frontend development, Bootstrap for
-                                    responsive design, and a backend powered by Spring Boot and Express to handle
-                                    task management functionalities.
-                                    It features task creation, editing, and deletion functionalities with real-time data
-                                    updates. 
-                                </p>
-
-                                <div class="project-details">
-                                    <h3>Project Overview</h3>
-                                    <ul>
-                                        <li><span>Objective:</span> Build a simple ToDo app to manage daily tasks with
-                                            functionalities like adding, editing, and deleting tasks, as well as
-                                            filtering and sorting them.</li>
-                                        <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
-                                            Backend: Spring Boot, Database: MYSQL.</li>
-                                        <li><span>Features:</span> Task management (add/edit/delete), task filtering,
-                                            real-time updates, and responsive UI.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                        <!-- Image for Admin -->
+                        <div class="image-container">
+                            <img src="admin.jpg" class="img-fluid" alt="Admin Dashboard">
+                            <hr class="image-line">
                         </div>
 
-                        <div id="Achievement" class="tab-contents">
-                            <h2>CERTIFICATE</h2>
-                            <br>
-                            <img src="nqt.jpg" alt="SOFTWARE ">
-                            <br>
-                            <img src="certificate.jpg" alt="SOFTWARE ">
-                            <br>
-                            <img src="certificate software.jpg" alt="SOFTWARE ">
-                            <br>
-                            <img src="tcs.jpg" alt="SOFTWARE ">
+                        <!-- Image for User -->
+                        <div class="image-container">
+                            <img src="user.jpg" class="img-fluid" alt="User Dashboard">
+                            <hr class="image-line">
                         </div>
-                        
-                        <!-- Contact Section -->
-                        <div id="Contact" class="tab-contents">
-                            <div class="container">
-                                <h2>Contact Me</h2>
-                                <p><strong>Email:</strong> <a href="sontakkeu1@gmail.com">sontakkeu1@gmail.com</a></p>
-                                <p><strong>Phone:</strong> +91 9503695884</p>
-                                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/uddhavs"
-                                        target="_blank">www.linkedin.com/in/uddhavs</a></p>
-                                <p><strong>GitHub:</strong> <a href="https://github.com/sontakkeu"
-                                        target="_blank">github.com/sontakke_uddhav</a></p>
-                            </div>
+                        <br><br>
+
+                        <p class="project-description">
+                            Developed a fully functional E-commerce platform with a component-based architecture
+                            and role-based access, providing a seamless shopping experience.
+                            The project leverages Angular Routing for smooth page navigation without
+                            reloading, and Bootstrap for responsive design to ensure the platform works
+                            efficiently on all devices.
+                            It integrates Angular 19, Spring Boot, Bootstrap, and MySQL for a
+                            secure, scalable, and user-friendly E-commerce platform.
+                        </p>
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <ul>
+                                <li><span>Objective:</span> Build a scalable E-commerce platform with smooth
+                                    navigation using Angular Routing, responsive UI with Bootstrap, and
+                                    role-based access control.</li>
+                                <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
+                                    Backend: Spring Boot, Database: MySQL, Development Environment:
+                                    Eclipse IDE.</li>
+                                <li><span>Features:</span> Product catalog, user authentication, shopping cart,
+                                    secure checkout, and admin panel with role-based access.</li>
+                            </ul>
                         </div>
+                    </div>
+
+                    <div class="project-details" id="todoProject" style="display: none;">
+                        <h2 class="section-title">ToDo App Project</h2>
+                        <div class="image-container">
+                            <img src="todo.jpg" class="img-fluid" alt="ToDo App Home">
+                            <hr class="image-line">
+                        </div>
+
+                        <div class="image-container">
+                            <img src="list.jpg" class="img-fluid" alt="ToDo App Login">
+                            <hr class="image-line">
+                        </div>
+                        <br><br>
+                        <p class="project-description">
+                            Developed a ToDo App that helps users manage their daily tasks and to-do lists
+                            in a simple, easy-to-use interface.
+                            The app integrates Angular 19 for frontend development, Bootstrap for
+                            responsive design, and a backend powered by Spring Boot and Express to handle
+                            task management functionalities.
+                            It features task creation, editing, and deletion functionalities with real-time data
+                            updates.
+                        </p>
+
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <ul>
+                                <li><span>Objective:</span> Build a simple ToDo app to manage daily tasks with
+                                    functionalities like adding, editing, and deleting tasks, as well as
+                                    filtering and sorting them.</li>
+                                <li><span>Technologies Used:</span> Frontend: Angular 19, Bootstrap,
+                                    Backend: Spring Boot, Database: MYSQL.</li>
+                                <li><span>Features:</span> Task management (add/edit/delete), task filtering,
+                                    real-time updates, and responsive UI.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="Achievement" class="tab-contents">
+                    <h2>CERTIFICATE</h2>
+                    <br>
+                    <img src="nqt.jpg" alt="SOFTWARE ">
+                    <br>
+                    <img src="certificate.jpg" alt="SOFTWARE ">
+                    <br>
+                    <img src="certificate software.jpg" alt="SOFTWARE ">
+                    <br>
+                    <img src="tcs.jpg" alt="SOFTWARE ">
+                </div>
+
+                <!-- Contact Section -->
+                <div id="Contact" class="tab-contents">
+                    <div class="container">
+                        <h2>Contact Me</h2>
+                        <p><strong>Email:</strong> <a href="sontakkeu1@gmail.com">sontakkeu1@gmail.com</a></p>
+                        <p><strong>Phone:</strong> +91 9503695884</p>
+                        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/uddhavs"
+                                target="_blank">www.linkedin.com/in/uddhavs</a></p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/sontakkeu"
+                                target="_blank">github.com/sontakke_uddhav</a></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
+    </div>
+    </div>
+
     <script>
         function opentab(tabname) {
             var tablinks = document.getElementsByClassName("tab-links");
@@ -352,6 +347,20 @@
                 todoProject.style.display = 'block';
             }
         });
+
+        const buttons = document.querySelectorAll("nav ul li button");
+
+
+        const navButtons = document.querySelectorAll("nav ul li button");
+
+        navButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                navButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+            });
+        });
+
     </script>
 </body>
+
 </html>
